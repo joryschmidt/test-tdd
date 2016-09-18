@@ -54,9 +54,11 @@ module.exports = function(config) {
             }
         },
 
+        // web server hostname for c9 ide compatibility
+        hostname: process.env.IP,
 
         // web server port
-        port: 9876,
+        port: process.env.PORT,
 
 
         // enable / disable colors in the output (reporters and logs)
